@@ -1,28 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    maximum-scale=1, user-scaleable=0">
+    <title> </title>
+    <link rel="stylesheet" href="style_css">
   </head>
   <body>
-    <script>
-    function setup() {
-      createCanvas(windowWidth,windowHeight);
-    background(220);
-    }
-
-
-    function draw() {
-      px = pow(mouseX- pmouseX, 2)
-      py = pow(mouseY- pmouseY, 2)
-      speed= sqrt(px+py)
-     circle(mouseX, mouseY, speed)
-    }
-
-    function mousePressed(){
-      background(random(250),random(255),random(255))
-    }
-
-
-}
-  </script>
+    <script type="module" src="app.js"></script>
   </body>
-<html/>
+</html>
