@@ -4,29 +4,24 @@
   </head>
   <body>
     <script>
-      function setup() {
-  createCanvas(400, 400);
-  background('rgba(0,255,0, 0.25)');
-  stroke('#2196F3')
-  strokeWeight(2)
-  fill('#00BCD4');
-  rect(110,200,40,100)
-  rect(250,200,40,100)
-  fill('rgb(255,47,179)');
-  rect(110,150,180,100,10,10,10,10);
-   fill('rgb(194,101,255)');
-  triangle(50,140,75, 40 ,100 ,140)
-  triangle(100 , 140, 125, 40, 150 ,140)
-   fill('#00BCD4');
-  circle(100,140,100)
-  fill('#3F51B5');
-    circle(100,150,30)
-  fill('rgb(37,37,37)');
-   circle(75,130,20)
-   circle(125,130, 20)
-   fill('rgb(255,220,220)');
-   circle(70,130, 5)
-   circle(120,130, 5)
+    function setup() {
+      createCanvas(windowWidth,windowHeight);
+    background(220);
+    }
+
+
+    function draw() {
+      px = pow(mouseX- pmouseX, 2)
+      py = pow(mouseY- pmouseY, 2)
+      speed= sqrt(px+py)
+     circle(mouseX, mouseY, speed)
+    }
+
+    function mousePressed(){
+      background(random(250),random(255),random(255))
+    }
+
+
 }
   </script>
   </body>
